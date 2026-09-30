@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#120b2d"/>
+      <stop offset="100%" stop-color="#070d1d"/>
+    </linearGradient>
+    <linearGradient id="redGlow" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ff7d8d"/>
+      <stop offset="100%" stop-color="#ff4c6d"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#ff4c6d" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <g opacity="0.9">
+    <circle cx="140" cy="110" r="2" fill="#fff"/>
+    <circle cx="260" cy="210" r="2" fill="#fff"/>
+    <circle cx="470" cy="150" r="2" fill="#fff"/>
+    <circle cx="700" cy="110" r="2" fill="#fff"/>
+    <circle cx="940" cy="160" r="2" fill="#fff"/>
+    <circle cx="1100" cy="100" r="2" fill="#fff"/>
+    <circle cx="220" cy="520" r="2" fill="#fff"/>
+    <circle cx="980" cy="540" r="2" fill="#fff"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <text x="640" y="260" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="92" font-weight="800" fill="url(#redGlow)" letter-spacing="4">GAME OVER</text>
+    <text x="640" y="360" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="42" fill="#dffef7" font-weight="600">FINAL SCORE: 65</text>
+  </g>
+
+  <g>
+    <rect x="440" y="420" width="400" height="100" rx="18" fill="#0d1428" stroke="url(#redGlow)" stroke-width="4"/>
+    <text x="640" y="484" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#fce4e8">RESTART</text>
+  </g>
+
+  <g opacity="0.9">
+    <circle cx="315" cy="518" r="26" fill="#ff4d6d"/>
+    <circle cx="940" cy="490" r="32" fill="#ff4d6d"/>
+    <circle cx="1025" cy="320" r="18" fill="#ff4d6d"/>
+    <circle cx="210" cy="368" r="18" fill="#ff4d6d"/>
+  </g>
+</svg>

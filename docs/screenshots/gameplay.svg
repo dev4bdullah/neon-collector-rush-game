@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#071421"/>
+      <stop offset="100%" stop-color="#0b1634"/>
+    </linearGradient>
+    <linearGradient id="hud" x1="0" x2="1">
+      <stop offset="0%" stop-color="#12263d"/>
+      <stop offset="100%" stop-color="#0d1b2d"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#2ef2a7" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <g opacity="0.9">
+    <circle cx="120" cy="90" r="2" fill="#fff"/>
+    <circle cx="320" cy="150" r="2" fill="#fff"/>
+    <circle cx="520" cy="100" r="2" fill="#fff"/>
+    <circle cx="760" cy="160" r="2" fill="#fff"/>
+    <circle cx="1010" cy="120" r="2" fill="#fff"/>
+    <circle cx="1160" cy="200" r="2" fill="#fff"/>
+  </g>
+
+  <g>
+    <rect x="30" y="24" width="1220" height="82" rx="18" fill="url(#hud)" stroke="#1cd1ff" stroke-width="3" opacity="0.9"/>
+    <text x="70" y="76" font-family="Segoe UI, Arial, sans-serif" font-size="32" fill="#dffef7" font-weight="700">SCORE</text>
+    <text x="235" y="76" font-family="Segoe UI, Arial, sans-serif" font-size="32" fill="#36f3b6" font-weight="700">000</text>
+
+    <text x="520" y="76" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#dffef7" font-weight="600">TARGET</text>
+    <text x="700" y="76" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#ffeb7a" font-weight="700">100</text>
+
+    <text x="900" y="76" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#dffef7" font-weight="600">LIVES</text>
+    <g transform="translate(1040 35)">
+      <circle cx="0" cy="18" r="12" fill="#ff5a7a"/>
+      <circle cx="28" cy="18" r="12" fill="#ff5a7a"/>
+      <circle cx="56" cy="18" r="12" fill="#ff5a7a"/>
+    </g>
+  </g>
+
+  <g>
+    <path d="M640 620 L700 560 L640 500 L580 560 Z" fill="#29f1ff" filter="url(#glow)"/>
+    <circle cx="360" cy="150" r="26" fill="#2ef2a7"/>
+    <circle cx="525" cy="120" r="26" fill="#2ef2a7"/>
+    <circle cx="890" cy="180" r="26" fill="#2ef2a7"/>
+    <circle cx="980" cy="120" r="26" fill="#2ef2a7"/>
+    <circle cx="215" cy="260" r="32" fill="#ff4d6d"/>
+    <circle cx="790" cy="300" r="35" fill="#ff4d6d"/>
+    <circle cx="1040" cy="260" r="28" fill="#ff4d6d"/>
+  </g>
+
+  <g opacity="0.9">
+    <rect x="110" y="610" width="170" height="72" rx="18" fill="#0d1428" stroke="#1ad4ff" stroke-width="3"/>
+    <polygon points="155,640 215,610 215,670" fill="#6ff7ff"/>
+    <text x="195" y="675" text-anchor="middle" font-size="24" fill="#dffef7" font-family="Segoe UI, Arial, sans-serif">LEFT</text>
+
+    <rect x="1000" y="610" width="170" height="72" rx="18" fill="#0d1428" stroke="#1ad4ff" stroke-width="3"/>
+    <polygon points="1125,640 1065,610 1065,670" fill="#6ff7ff"/>
+    <text x="1085" y="675" text-anchor="middle" font-size="24" fill="#dffef7" font-family="Segoe UI, Arial, sans-serif">RIGHT</text>
+  </g>
+</svg>

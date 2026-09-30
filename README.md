@@ -23,6 +23,20 @@ Open the game in your browser at:
 
 - Development: http://localhost:5173/
 
+Screenshots
+-
+### Home screen
+
+![Home screen](docs/screenshots/home.svg)
+
+### Gameplay
+
+![Gameplay screen](docs/screenshots/gameplay.svg)
+
+### End screen
+
+![End screen](docs/screenshots/end.svg)
+
 To create a production build and serve it locally:
 
 ```bash
