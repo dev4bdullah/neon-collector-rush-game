@@ -15,7 +15,7 @@ Install & run locally
 From the project root (`neon-collector-rush/neon-collector-rush`):
 
 ```bash
-npm install
+npm ci
 npm start
 ```
 
@@ -45,6 +45,17 @@ npx serve -s dist -l 5174
 ```
 
 Then open: http://localhost:5174/
+
+Netlify deployment
+-
+The root `netlify.toml` configures `npm ci --include=dev && npm run build`
+as the build command and `dist` as the publish directory. This explicitly installs
+the locked dependencies, including Vite, before building, even when deployment
+starts without a separate dependency-installation step.
+Keep `package-lock.json` in version control, but do not commit `node_modules`.
+Netlify installs dependencies for its Linux build environment; committed dependencies
+from another operating system can cause `vite: Permission denied` and native binary errors.
+If an older deployment cached those dependencies, clear the deploy cache before retrying.
 
 Notes
 -
